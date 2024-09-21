@@ -51,7 +51,6 @@
     }
 
     body {
-        min-height: 100svh;
         overflow-x: hidden;
         background-color: var(--bg-primary);
         color: var(--color-primary);
@@ -61,6 +60,11 @@
             filter 350ms ease-in-out,
             color 350ms ease-in-out,
         ;
+
+        display: grid;
+        min-height: 100svh;
+        grid-template-rows: auto 1fr auto;
+
     }
 
     :is(ul, ol) {
